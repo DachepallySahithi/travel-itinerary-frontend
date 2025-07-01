@@ -1,4 +1,4 @@
-const GITHUB_TOKEN = "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";
+const GITHUB_TOKEN = "";
 const endpoint = "https://models.github.ai/inference";
 const model = "openai/gpt-4.1";
 
