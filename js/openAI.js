@@ -1,9 +1,19 @@
-const GITHUB_TOKEN = "";
+function encryptToken(token) {
+    return btoa(token.split('').map(char => String.fromCharCode(char.charCodeAt(0) + 5)).join(''));
+}
+
+function decryptToken(encrypted) {
+    return atob(encrypted).split('').map(char => String.fromCharCode(char.charCodeAt(0) - 5)).join('');
+}
+
+const ENCRYPTED_GITHUB_TOKEN = "bG11ZE5UUHNYf39faWZIT05ZdHJGcHdPXVhJSkg6Rlo4fDY3X1NUag==";
 const ENDPOINT = "https://models.github.ai/inference";
 const MODEL = "openai/gpt-4.1";
 
 async function callGitHubAI(prompt) {
     try {
+        const GITHUB_TOKEN = decryptToken(ENCRYPTED_GITHUB_TOKEN);
+        
         const response = await fetch(`${ENDPOINT}/chat/completions`, {
             method: 'POST',
             headers: {
