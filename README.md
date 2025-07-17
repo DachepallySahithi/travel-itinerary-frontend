@@ -1,6 +1,8 @@
-<img width="1877" height="857" alt="Screenshot 2025-07-17 212932" src="https://github.com/user-attachments/assets/08509e6b-4cbc-4c8c-9735-b95758193f21" /># travel-itinerary-frontend
+# travel-itinerary-frontend
+
 <img width="1881" height="602" alt="Screenshot 2025-07-17 212908" src="https://github.com/user-attachments/assets/03091ff3-a190-4298-bd88-1dd6f6a30594" />
-![Screenshot 2025-07-01 211106](https://github.com/user-attachments/assets/1e358384-1a2d-4a4d-a6fa-f9118c1aa80d)
+
+<img width="1877" height="857" alt="Screenshot 2025-07-17 212932" src="https://github.com/user-attachments/assets/08509e6b-4cbc-4c8c-9735-b95758193f21" />
 ![Screenshot 2025-07-10 080420](https://github.com/user-attachments/assets/4cf9d45f-24fa-451e-b3ab-09abccbc4ba9)
 ![Screenshot 2025-07-10 080501](https://github.com/user-attachments/assets/49d70a1d-64e0-4fdf-b3a4-774ff990818e)
 ![Screenshot 2025-07-01 211131](https://github.com/user-attachments/assets/1eb1bc4a-6648-42d9-9ce9-c9f424912554)
