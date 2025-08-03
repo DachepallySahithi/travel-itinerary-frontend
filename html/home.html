@@ -349,10 +349,12 @@
             /* Apply Slide Animations to Navigation Items */
             .navbar-nav .nav-item:nth-child(odd) {
                 animation: slideInLeft 0.8s ease-out;
+                 --bs-nav-link-color: #667eea
             }
             
             .navbar-nav .nav-item:nth-child(even) {
                 animation: slideInRight 0.8s ease-out;
+                 --bs-nav-link-color: #667eea;
             }
             
             /* Rotate Animation for Icons */
@@ -388,7 +390,7 @@
                 <!-- Navigation Menu -->
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                      <ul class="navbar-nav align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
                     <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
                     <li class="nav-item"><a class="nav-link" href="payment.html">Payments</a></li>
@@ -690,7 +692,7 @@
         <!-- ===== FOOTER ===== -->
         <footer class="bg-light py-4 mt-5">
             <div class="container text-center">
-                <p class="mb-0">&copy; 2024 Travel Itinerary. All rights reserved.</p>
+                <p class="mb-0">&copy; 2025 Travel Itinerary. All rights reserved.</p>
             </div>
         </footer>
 
@@ -730,26 +732,6 @@
                     const displayName = currentUser.firstName || currentUser.userName || 'User';
                     userNameElements.forEach(el => el.textContent = displayName);
                       // Show current membership if user has one
-                
-                // Update membership badge in navigation
-                const membershipBadge = document.getElementById('membershipBadge');
-                const membershipType = document.getElementById('membershipType');
-                if (currentUser.membershipPlan && membershipBadge && membershipType) {
-                    membershipBadge.style.display = 'inline-block';
-                    membershipType.textContent = currentUser.membershipPlan;
-                    
-                    // Change badge color based on plan
-                    membershipBadge.className = 'badge';
-                    if (currentUser.membershipPlan === 'LITE') {
-                        membershipBadge.classList.add('bg-info');
-                    } else if (currentUser.membershipPlan === 'PRO') {
-                        membershipBadge.classList.add('bg-success');
-                    } else if (currentUser.membershipPlan === 'PREMIUM') {
-                        membershipBadge.classList.add('bg-warning');
-                    } else {
-                        membershipBadge.classList.add('bg-primary');
-                    }
-                }
                     
                     // Update membership display
                     const membershipBadge = document.getElementById('membershipBadge');
